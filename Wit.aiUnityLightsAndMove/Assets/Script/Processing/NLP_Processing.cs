@@ -39,12 +39,14 @@ namespace UnityHttpReq
 
         public void ProcessSpokenFile(string file)
         {
+			UnityEngine.Debug.Log ("File reading");
             FileStream filestream = new FileStream(file, FileMode.Open, FileAccess.Read);
             BinaryReader filereader = new BinaryReader(filestream);
             byte[] BA_AudioFile = filereader.ReadBytes((Int32)filestream.Length);
             filestream.Close();
             filereader.Close();
 
+			UnityEngine.Debug.Log("Send wit request");
             Request req = new Request("POST", speech_url, BA_AudioFile);
             req.AddHeader("Authorization", "Bearer " + wit_ai_access);
             req.AddHeader("Content-Type", "audio/wav");

@@ -38,6 +38,12 @@ namespace UnityHttpReq
 
             [JsonConverter(typeof(JsonToArrayConverter<_On_Off>))]
             public _On_Off[] on_off { get; set; }
+
+			[JsonConverter(typeof(JsonToArrayConverter<_Direction>))]
+			public _Direction[] direction { get; set; }
+
+			[JsonConverter(typeof(JsonToArrayConverter<_Distance>))]
+			public _Distance[] distance { get; set; }
         }
 
         /*
@@ -69,7 +75,17 @@ namespace UnityHttpReq
             public string value { get; set; }
         }
 
+		public class _Direction
+		{
+			public string value { get; set; }
+		}
 
+		public class _Distance
+		{
+			public float value { get; set; }
+			public string type { get; set; }
+			public string unit { get; set; }
+		}
 
         public class _Object
         {

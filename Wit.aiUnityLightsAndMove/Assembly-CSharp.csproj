@@ -53,7 +53,9 @@
      <Compile Include="Assets\Script\HTTP\ResponseCallbackDispatcher.cs" />
      <Compile Include="Assets\Script\NLP\LightsActuator.cs" />
      <Compile Include="Assets\Script\NLP\O_NLP.cs" />
+     <Compile Include="Assets\Script\NLP\PlayerMover.cs" />
      <Compile Include="Assets\Script\NLP\lights.cs" />
+     <Compile Include="Assets\Script\NLP\move.cs" />
      <Compile Include="Assets\Script\PluginController.cs" />
      <Compile Include="Assets\Script\Processing\NLP_Processing.cs" />
      <Compile Include="Assets\Script\Processing\Post_NLP_Processing.cs" />
@@ -62,11 +64,11 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="System.Web">
- <HintPath>C:/Users/Public/Documents/Unity Projects/Wit.aiUnityLightsAndMove/Assets/lib/System.Web.dll</HintPath>
- </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>C:/Users/Public/Documents/Unity Projects/Wit.aiUnityLightsAndMove/Assets/lib/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web">
+ <HintPath>C:/Users/Public/Documents/Unity Projects/Wit.aiUnityLightsAndMove/Assets/lib/System.Web.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zlib">
  <HintPath>C:/Users/Public/Documents/Unity Projects/Wit.aiUnityLightsAndMove/Assets/Script/lib/Ionic.Zlib.dll</HintPath>

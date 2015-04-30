@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Processing\NLP_Processing.cs">
+    <Files>
+      <File FileName="Assets\Script\PluginController.cs" Line="15" Column="24" />
+      <File FileName="Assets\Script\NLP\O_NLP.cs" Line="89" Column="3" />
+      <File FileName="Assets\Script\NLP\move.cs" Line="14" Column="27" />
+      <File FileName="Assets\Script\NLP\PlayerMover.cs" Line="45" Column="38" />
+      <File FileName="Assets\Script\Processing\NLP_Processing.cs" Line="64" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
