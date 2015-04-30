@@ -1,0 +1,7 @@
+C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\WitaiConsoleWavRecognition\WitaiUnity\bin\Debug\WitaiUnity.exe.config
+C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\WitaiConsoleWavRecognition\WitaiUnity\bin\Debug\WitaiUnity.exe
+C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\WitaiConsoleWavRecognition\WitaiUnity\bin\Debug\WitaiUnity.pdb
+C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\WitaiConsoleWavRecognition\WitaiUnity\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\WitaiConsoleWavRecognition\WitaiUnity\obj\Debug\WitaiConsoleWavRecognition.csprojResolveAssemblyReference.cache
+C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\WitaiConsoleWavRecognition\WitaiUnity\obj\Debug\WitaiUnity.exe
+C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\WitaiConsoleWavRecognition\WitaiUnity\obj\Debug\WitaiUnity.pdb
