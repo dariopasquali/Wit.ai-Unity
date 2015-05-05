@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEditor;
 using System;
 namespace UnityHttpReq
 {
@@ -20,7 +19,7 @@ namespace UnityHttpReq
 			value = val;
 			unit = U;
 
-			if (val == null)
+			if (val == 0)
 				value = 10000;
 			else {
 				if (unit.Equals ("centimetre"))

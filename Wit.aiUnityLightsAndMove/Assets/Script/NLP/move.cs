@@ -16,6 +16,8 @@ namespace UnityHttpReq
 
 		public string doSomething(O_NLP.RootObject _o_NLP)
 		{
+			string sentence = "";
+
 			// Bind to the wit.ai NLP response class
 			o_NLP = _o_NLP;
 			conf = (o_NLP.outcomes[0].confidence * 100);
@@ -32,11 +34,14 @@ namespace UnityHttpReq
 
 				PlayerMover.stopMovement();
 			}
-			
-			string sentence = "";
-			
-			sentence += "Hello! I'm " + conf.ToString() + "% sure you set up lights.";
-			
+
+			sentence += "sentence: " + o_NLP.outcomes[0]._text + "\n";
+			sentence += "intent: move\n";
+			sentence += "direction: " + direction + "\n";
+			sentence += "value: " + value + "\n";
+			sentence += "unit: " + unit + "\n";
+			sentence += "confidence: " + conf+"\n"; 			
+						
 			return sentence;
 		}
 

@@ -6,7 +6,6 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.IO;
 using Newtonsoft.Json;
-using System.Web;
 
 
 namespace UnityHttpReq
@@ -19,10 +18,10 @@ namespace UnityHttpReq
         {
 
             // HTML-decode the string, in case it has been HTML encoded
-            string jsonText = HttpUtility.HtmlDecode(text);
+            //string jsonText = HttpUtility.HtmlDecode(text);
 
             //Since object is reserved, put a _ in front
-            jsonText = jsonText.Replace("\"object\" : {", "\"_object\" : {");
+            string jsonText = text.Replace("\"object\" : {", "\"_object\" : {");
 
 
             //Deserialize into our class

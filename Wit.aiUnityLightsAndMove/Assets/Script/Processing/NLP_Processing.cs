@@ -6,7 +6,6 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading;
-using System.Web;
 using System.Security.Cryptography.X509Certificates;
 using System.Collections;
 using System.Reflection;
@@ -20,6 +19,7 @@ namespace UnityHttpReq
         private  string wit_ai_access = "F2F6AZ3G3X2737DH4ZDB33H4U64QNAPB";
         private string speech_url = "https://api.wit.ai/speech";
 
+		public static string log;
        
 
         // O_NLP.RootObject is a class that contains the data interpreted from wit.ai
@@ -28,6 +28,7 @@ namespace UnityHttpReq
        
         public NLP_Processing(string wit_ai_access_token)
         {
+			log = "";
             System.Net.ServicePointManager.ServerCertificateValidationCallback += (s, ce, ca, p) => true;
             wit_ai_access = wit_ai_access_token;
         }
@@ -39,6 +40,8 @@ namespace UnityHttpReq
 
         public void ProcessSpokenFile(string file)
         {
+			log = "hold on ....";
+			DateTime start = DateTime.Now;
 			UnityEngine.Debug.Log ("File reading");
             FileStream filestream = new FileStream(file, FileMode.Open, FileAccess.Read);
             BinaryReader filereader = new BinaryReader(filestream);
@@ -53,6 +56,7 @@ namespace UnityHttpReq
 
             req.Send((request) =>
             {
+				log = DateTime.Now.Subtract(start).ToString()+"\n\n";
                 UnityEngine.Debug.Log(ElaborateResponse(request.response.Text));
             });
           
@@ -61,6 +65,7 @@ namespace UnityHttpReq
 
         private string ElaborateResponse(string nlp_text)
         {
+			string sentence = "";
             UnityEngine.Debug.Log(nlp_text);
 
             // If the audio file doesn't contain anything, or wit.ai doesn't understand it, a code 400 will be returned
@@ -77,7 +82,11 @@ namespace UnityHttpReq
             Assembly objAssembly;
             objAssembly = Assembly.GetExecutingAssembly();
 
+
 			Type classType = objAssembly.GetType("UnityHttpReq." + oNLP.outcomes[0].intent);
+
+			if (classType == null)
+				log += "Error: can't recognize the intent";
 
             object obj = Activator.CreateInstance(classType);
 
@@ -87,12 +96,12 @@ namespace UnityHttpReq
             parameters[0] = oNLP;
 
             mi = classType.GetMethod("doSomething");
-            string sentence = "";
+            
             sentence = (string)mi.Invoke(obj, parameters);
 
             // Show what was deducted from the sentence
             //nlp_text += "\n\n"+sentence;
-
+			log += sentence;
             return sentence;
 
         }

@@ -15,6 +15,9 @@ namespace UnityHttpReq
 		{
 			// Bind to the wit.ai NLP response class
 			o_NLP = _o_NLP;
+
+
+
 			conf = (o_NLP.outcomes[0].confidence * 100);
 
 			state = o_NLP.outcomes[0].entities.on_off[0].value;
@@ -24,9 +27,12 @@ namespace UnityHttpReq
             else
                 LightsActuator.setActive(false);
 
+
 			string sentence = "";
-			
-			sentence += "Hello! I'm " + conf.ToString() + "% sure you set up lights.";
+			sentence += "sentence: " + o_NLP.outcomes [0]._text + "\n";
+			sentence += "intent: lights\n";
+			sentence += "state: " + state+"\n";
+			sentence += "confidence: " + conf+"\n"; 
 			
 			return sentence;
 		}
