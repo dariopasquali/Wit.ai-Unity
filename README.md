@@ -17,6 +17,7 @@ Wit.ai, to works correctly unity, needs 3 type of Classes:
 
 ###JSON Class (O_NLP)
 	to parse the JSON message from the Wit.ai during che Process.
+    You have to replicate the JSON format with classes and attibutes.
 
 
 
