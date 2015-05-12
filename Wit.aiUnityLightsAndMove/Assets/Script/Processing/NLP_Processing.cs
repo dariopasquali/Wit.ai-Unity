@@ -16,7 +16,7 @@ namespace UnityHttpReq
 {
     class NLP_Processing
     {
-        private  string wit_ai_access = "F2F6AZ3G3X2737DH4ZDB33H4U64QNAPB";
+        private  string wit_ai_access = "";
         private string speech_url = "https://api.wit.ai/speech";
 
 		public static string log;
@@ -57,7 +57,7 @@ namespace UnityHttpReq
             req.Send((request) =>
             {
 				log = DateTime.Now.Subtract(start).ToString()+"\n\n";
-                UnityEngine.Debug.Log(ElaborateResponse(request.response.Text));
+                ElaborateResponse(request.response.Text);
             });
           
         }
@@ -66,7 +66,7 @@ namespace UnityHttpReq
         private string ElaborateResponse(string nlp_text)
         {
 			string sentence = "";
-            UnityEngine.Debug.Log(nlp_text);
+           	log += "\n" + nlp_text;
 
             // If the audio file doesn't contain anything, or wit.ai doesn't understand it, a code 400 will be returned
             if (nlp_text.Contains("The remote server returned an error: (400) Bad Request"))

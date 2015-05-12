@@ -16,7 +16,7 @@ Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsA
 Loading C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
 Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\Ionic.Zlib.dll (this message is harmless)
 Loading C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\Ionic.Zlib.dll into Unity Child Domain
-- Completed reload, in  0.066 seconds
+- Completed reload, in  0.101 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -28,7 +28,7 @@ Wit.ai Controller started
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: d18 -> priority: 1 
+  Thread -> id: 1300 -> priority: 1 
 File reading
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
@@ -40,17 +40,13 @@ Send wit request
 Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\Mono.Security.dll (this message is harmless)
 NET: SSL Cert: RemoteCertificateNotAvailable, RemoteCertificateChainErrors
 {
-  "msg_id" : "1668503f-90c5-4dc3-b68d-bfaba4cb0482",
-  "_text" : "turn the lights off",
+  "msg_id" : "0d7b0cf2-6f03-4421-b730-4b03fca65b1e",
+  "_text" : "movie",
   "outcomes" : [ {
-    "_text" : "turn the lights off",
-    "intent" : "lights",
-    "entities" : {
-      "on_off" : [ {
-        "value" : "off"
-      } ]
-    },
-    "confidence" : 0.999
+    "_text" : "movie",
+    "intent" : "move",
+    "entities" : { },
+    "confidence" : 0.392
   } ]
 }
  
@@ -58,179 +54,13 @@ NET: SSL Cert: RemoteCertificateNotAvailable, RemoteCertificateChainErrors
 
 Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\System.Xml.dll (this message is harmless)
 Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\System.Data.dll (this message is harmless)
-sentence: turn the lights off
-intent: lights
-state: off
-confidence: 99.9
-
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-File reading
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Send wit request
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-{
-  "msg_id" : "77272c38-a01e-4c7c-b747-a46540ba8204",
-  "_text" : "porn online",
-  "outcomes" : [ {
-    "_text" : "porn online",
-    "intent" : "lights",
-    "entities" : {
-      "on_off" : [ {
-        "value" : "on"
-      } ]
-    },
-    "confidence" : 0.615
-  } ]
-}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-sentence: porn online
-intent: lights
-state: on
-confidence: 61.5
-
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-File reading
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Send wit request
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-{
-  "msg_id" : "fef8eb3e-6285-45d0-8334-8492c41e0df1",
-  "_text" : "turn the lights off",
-  "outcomes" : [ {
-    "_text" : "turn the lights off",
-    "intent" : "lights",
-    "entities" : {
-      "on_off" : [ {
-        "value" : "off"
-      } ]
-    },
-    "confidence" : 0.999
-  } ]
-}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-sentence: turn the lights off
-intent: lights
-state: off
-confidence: 99.9
-
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-File reading
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Send wit request
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-{
-  "msg_id" : "2cb84dd4-e033-46ce-b4d0-2e3b99f5dd02",
-  "_text" : "move forward 10 meters",
-  "outcomes" : [ {
-    "_text" : "move forward 10 meters",
-    "intent" : "move",
-    "entities" : {
-      "distance" : [ {
-        "value" : 10,
-        "type" : "value",
-        "unit" : "metre"
-      } ],
-      "direction" : [ {
-        "value" : "forwards"
-      } ]
-    },
-    "confidence" : 0.998
-  } ]
-}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-sentence: move forward 10 meters
-intent: move
-direction: forwards
-value: 10
-unit: metre
-confidence: 99.8
-
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-File reading
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Send wit request
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-{
-  "msg_id" : "eac38631-85f2-4a84-836a-daf1b1443ea7",
-  "_text" : "turn the lights off",
-  "outcomes" : [ {
-    "_text" : "turn the lights off",
-    "intent" : "lights",
-    "entities" : {
-      "on_off" : [ {
-        "value" : "off"
-      } ]
-    },
-    "confidence" : 0.999
-  } ]
-}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-sentence: turn the lights off
-intent: lights
-state: off
-confidence: 99.9
-
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-File reading
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Send wit request
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-{
-  "msg_id" : "641446b4-f6fb-4624-aa5f-2cb332aa2d55",
-  "_text" : "online lite",
-  "outcomes" : [ {
-    "_text" : "online lite",
-    "intent" : "UNKNOWN",
-    "entities" : { },
-    "confidence" : 0.985
-  } ]
-}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-ArgumentNullException: Argument cannot be null.
-Parameter name: type
-  at System.Activator.CheckType (System.Type type) [0x00000] in <filename unknown>:0 
-  at System.Activator.CreateInstance (System.Type type, Boolean nonPublic) [0x00000] in <filename unknown>:0 
-  at System.Activator.CreateInstance (System.Type type) [0x00000] in <filename unknown>:0 
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityHttpReq.move.doSomething (UnityHttpReq.RootObject _o_NLP) [0x00000] in <filename unknown>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <filename unknown>:0 
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <filename unknown>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <filename unknown>:0 
   at UnityHttpReq.NLP_Processing.ElaborateResponse (System.String nlp_text) [0x00000] in <filename unknown>:0 
   at UnityHttpReq.NLP_Processing+<ProcessSpokenFile>c__AnonStorey1.<>m__2 (HTTP.Request request) [0x00000] in <filename unknown>:0 
   at HTTP.ResponseCallbackDispatcher.Update () [0x00000] in <filename unknown>:0 
@@ -246,242 +76,7 @@ Send wit request
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 {
-  "msg_id" : "0d929c93-76a9-46fb-a287-6e650d389104",
-  "_text" : "porn online",
-  "outcomes" : [ {
-    "_text" : "porn online",
-    "intent" : "lights",
-    "entities" : {
-      "on_off" : [ {
-        "value" : "on"
-      } ]
-    },
-    "confidence" : 0.615
-  } ]
-}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-sentence: porn online
-intent: lights
-state: on
-confidence: 61.5
-
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-File reading
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Send wit request
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-{
-  "msg_id" : "3afb8d0a-9a3c-4f2f-9323-8cc72382120e",
-  "_text" : "turn the lights off",
-  "outcomes" : [ {
-    "_text" : "turn the lights off",
-    "intent" : "lights",
-    "entities" : {
-      "on_off" : [ {
-        "value" : "off"
-      } ]
-    },
-    "confidence" : 0.999
-  } ]
-}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-sentence: turn the lights off
-intent: lights
-state: off
-confidence: 99.9
-
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-File reading
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Send wit request
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-{
-  "msg_id" : "72d24f6c-4e65-47e5-9048-29fb414dc9f4",
-  "_text" : "porn online",
-  "outcomes" : [ {
-    "_text" : "porn online",
-    "intent" : "lights",
-    "entities" : {
-      "on_off" : [ {
-        "value" : "on"
-      } ]
-    },
-    "confidence" : 0.615
-  } ]
-}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-sentence: porn online
-intent: lights
-state: on
-confidence: 61.5
-
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-File reading
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Send wit request
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-{
-  "msg_id" : "e73c1677-9131-4215-a3da-01d9cf525b0b",
-  "_text" : "move forward 10 meters",
-  "outcomes" : [ {
-    "_text" : "move forward 10 meters",
-    "intent" : "move",
-    "entities" : {
-      "distance" : [ {
-        "value" : 10,
-        "type" : "value",
-        "unit" : "metre"
-      } ],
-      "direction" : [ {
-        "value" : "forwards"
-      } ]
-    },
-    "confidence" : 0.998
-  } ]
-}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-sentence: move forward 10 meters
-intent: move
-direction: forwards
-value: 10
-unit: metre
-confidence: 99.8
-
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-File reading
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Send wit request
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-{
-  "msg_id" : "50d1d603-fe4c-48f6-9854-f51efb58310b",
-  "_text" : "online lite",
-  "outcomes" : [ {
-    "_text" : "online lite",
-    "intent" : "UNKNOWN",
-    "entities" : { },
-    "confidence" : 0.985
-  } ]
-}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-ArgumentNullException: Argument cannot be null.
-Parameter name: type
-  at System.Activator.CheckType (System.Type type) [0x00000] in <filename unknown>:0 
-  at System.Activator.CreateInstance (System.Type type, Boolean nonPublic) [0x00000] in <filename unknown>:0 
-  at System.Activator.CreateInstance (System.Type type) [0x00000] in <filename unknown>:0 
-  at UnityHttpReq.NLP_Processing.ElaborateResponse (System.String nlp_text) [0x00000] in <filename unknown>:0 
-  at UnityHttpReq.NLP_Processing+<ProcessSpokenFile>c__AnonStorey1.<>m__2 (HTTP.Request request) [0x00000] in <filename unknown>:0 
-  at HTTP.ResponseCallbackDispatcher.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-File reading
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Send wit request
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-{
-  "msg_id" : "975dce85-f32f-470c-901a-84e2a609dbe1",
-  "_text" : "online lite",
-  "outcomes" : [ {
-    "_text" : "online lite",
-    "intent" : "UNKNOWN",
-    "entities" : { },
-    "confidence" : 0.985
-  } ]
-}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-ArgumentNullException: Argument cannot be null.
-Parameter name: type
-  at System.Activator.CheckType (System.Type type) [0x00000] in <filename unknown>:0 
-  at System.Activator.CreateInstance (System.Type type, Boolean nonPublic) [0x00000] in <filename unknown>:0 
-  at System.Activator.CreateInstance (System.Type type) [0x00000] in <filename unknown>:0 
-  at UnityHttpReq.NLP_Processing.ElaborateResponse (System.String nlp_text) [0x00000] in <filename unknown>:0 
-  at UnityHttpReq.NLP_Processing+<ProcessSpokenFile>c__AnonStorey1.<>m__2 (HTTP.Request request) [0x00000] in <filename unknown>:0 
-  at HTTP.ResponseCallbackDispatcher.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-File reading
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Send wit request
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-{
-  "msg_id" : "9edaa8a4-28be-4b00-9907-03ff3e095c3e",
-  "_text" : "online lite",
-  "outcomes" : [ {
-    "_text" : "online lite",
-    "intent" : "UNKNOWN",
-    "entities" : { },
-    "confidence" : 0.985
-  } ]
-}
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-ArgumentNullException: Argument cannot be null.
-Parameter name: type
-  at System.Activator.CheckType (System.Type type) [0x00000] in <filename unknown>:0 
-  at System.Activator.CreateInstance (System.Type type, Boolean nonPublic) [0x00000] in <filename unknown>:0 
-  at System.Activator.CreateInstance (System.Type type) [0x00000] in <filename unknown>:0 
-  at UnityHttpReq.NLP_Processing.ElaborateResponse (System.String nlp_text) [0x00000] in <filename unknown>:0 
-  at UnityHttpReq.NLP_Processing+<ProcessSpokenFile>c__AnonStorey1.<>m__2 (HTTP.Request request) [0x00000] in <filename unknown>:0 
-  at HTTP.ResponseCallbackDispatcher.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-File reading
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Send wit request
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-{
-  "msg_id" : "b792df54-6e63-424c-943b-b8b8eb51b014",
+  "msg_id" : "a6fdf697-891c-4294-9bbd-559f77603148",
   "_text" : "turn the lights off",
   "outcomes" : [ {
     "_text" : "turn the lights off",

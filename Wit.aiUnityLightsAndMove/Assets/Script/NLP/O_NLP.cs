@@ -33,9 +33,7 @@ namespace UnityHttpReq
             [JsonConverter(typeof(JsonToArrayConverter<_Object>))]
             public _Object[] _object { get; set; }
 
-            [JsonConverter(typeof(JsonToArrayConverter<_Target_Temperature>))]
-            public _Target_Temperature[] target_temperature { get; set; }
-
+            
             [JsonConverter(typeof(JsonToArrayConverter<_On_Off>))]
             public _On_Off[] on_off { get; set; }
 
@@ -46,31 +44,8 @@ namespace UnityHttpReq
 			public _Distance[] distance { get; set; }
         }
 
-        /*
-        public class _Target_Temperature
-        {
-            public int end { get; set; }
-            public int start { get; set; }
-            public string role { get; set; }
-            public _Val value { get; set; }
-            public string body { get; set; }
-        }
-
-        public class _Val
-        {
-            public double temperature { get; set; }
-        }
-        */
-
-
-        public class _Target_Temperature
-        {
-            public double value { get; set; }
-            public string type { get; set; }
-            public string unit { get; set; }
-        }
-
-        public class _On_Off
+      
+		public class _On_Off
         {
             public string value { get; set; }
         }

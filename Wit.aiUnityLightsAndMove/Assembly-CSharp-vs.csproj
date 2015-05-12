@@ -59,7 +59,7 @@
      <Compile Include="Assets\Script\PluginController.cs" />
      <Compile Include="Assets\Script\Processing\NLP_Processing.cs" />
      <Compile Include="Assets\Script\Processing\Post_NLP_Processing.cs" />
-     <Compile Include="Assets\Script\lib\JSON.cs" />
+     <Compile Include="Assets\lib\JSON.cs" />
      <None Include="Assets\lib\Newtonsoft.Json.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -68,7 +68,7 @@
  <HintPath>C:/Users/Gabri/Desktop/GITHUB/Wit.ai-Unity/Wit.aiUnityLightsAndMove/Assets/lib/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Ionic.Zlib">
- <HintPath>C:/Users/Gabri/Desktop/GITHUB/Wit.ai-Unity/Wit.aiUnityLightsAndMove/Assets/Script/lib/Ionic.Zlib.dll</HintPath>
+ <HintPath>C:/Users/Gabri/Desktop/GITHUB/Wit.ai-Unity/Wit.aiUnityLightsAndMove/Assets/lib/Ionic.Zlib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,15 +4,15 @@ using UnityHttpReq;
 
 public class PluginController : MonoBehaviour {
 
+
+	//this app works with my Wit.ai code
+	// change it if you wanto to use this app as a template
 	string wit_code = "EIZVGRFJR4THCTATYLNAAMOXIUWBPV7N";
-	string filepath = @"C:\Users\Public\Documents\Unity Projects\Wit.aiUnityLightsAndMove\";
 
     string lightoff = @"lightsoff.wav";
 	string lighton = @"lightson.wav";
-
 	string move10 = @"move10.wav";
-	string stop = @"stop.wav";
-	string go = @"go.wav";
+
 
 	public GameObject cube;
 
@@ -24,38 +24,22 @@ public class PluginController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {		
 		
-		print ("Wit.ai Controller started");
-        processor = new NLP_Processing(wit_code);
+		processor = new NLP_Processing(wit_code);
 
 	}
 
 	void FixedUpdate () {
 
 		if (Input.GetKeyDown (KeyCode.P)) {
-			
-			string file = filepath+lightoff;
-			processor.ProcessSpokenFile(file);
+			processor.ProcessSpokenFile(lightoff);
 		}
 		
 		if (Input.GetKeyDown (KeyCode.O)) {
-			
-			string file = filepath+lighton;
-			processor.ProcessSpokenFile(file);
+			processor.ProcessSpokenFile(lighton);
 		}
 
 		if (Input.GetKeyDown (KeyCode.W)) {
-			string file = filepath+move10;
-			processor.ProcessSpokenFile(file);
-		}
-
-		if (Input.GetKeyDown (KeyCode.G)) {
-			string file = filepath+go;
-			processor.ProcessSpokenFile(file);
-		}
-
-		if (Input.GetKeyDown (KeyCode.S)) {
-			string file = filepath+stop;
-			processor.ProcessSpokenFile(file);
+			processor.ProcessSpokenFile(move10);
 		}
 	}
 

@@ -17,7 +17,7 @@ namespace WitaiUnity
             string wit_code = "EIZVGRFJR4THCTATYLNAAMOXIUWBPV7N";
             string filepath = @"C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\WitaiConsoleWavRecognition\";
 
-            string filename = "ligthsoff.wav";
+            string filename = "lightsonAD.wav";
 
             Witai witai;
 
