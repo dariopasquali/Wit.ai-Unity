@@ -24,21 +24,21 @@ i.e. you can say "light on/off" and the behavior is the same. (this is the power
 If you want to use this project as a template you must know some little things.
 
 ###1. Main Folder
-	Here you must put the audio file with your command. That file must be in PCM or 		ADPCM (better) format.
+Here you must put the audio file with your command. That file must be in PCM or ADPCM (better) format.
     
 ###2. /Assets/Script/PluginController.cs
-	This script control the processing of Speech files in response to user keyDown 			input. (i.e. if you press P, the script process "lightsoff" tu turn off the light)
+This script control the processing of Speech files in response to user keyDown 			input. (i.e. if you press P, the script process "lightsoff" tu turn off the light)
     
-   	In this calss you also have to configure the Wit.ai access Token with your app code,	the processing class need this code to comunicate with your application on Wit.ai 		servers.
+In this calss you also have to configure the Wit.ai access Token with your app code,	the processing class need this code to comunicate with your application on Wit.ai 		servers.
 
 ###3. /Assets/Script/NLP
-	This folder is the core of the Game, it contains all the real class that implement		the command behavior.
+This folder is the core of the Game, it contains all the real class that implement		the command behavior.
     
-	To implement and realize a Wit.ai command you need 3 elements:
+To implement and realize a Wit.ai command you need 3 elements:
     
-    O_NLP classes: this file contains all the info to convert the JSON data packet to real C# object.
-    In particual you must add your custom Entities in the Entities class.
-    To know how you must format your C# classes just see the JSON data packet (Preview API Output) in che Wit.Ai Enitites Console. 
+O_NLP classes: this file contains all the info to convert the JSON data packet to real C# object.
+In particual you must add your custom Entities in the Entities class.
+To know how you must format your C# classes just see the JSON data packet (Preview API Output) in che Wit.Ai Enitites Console. 
     
     i.e. 
     
@@ -80,16 +80,16 @@ If you want to use this project as a template you must know some little things.
         	public string value { get; set; }
         }
 
-	Intent Classes: Classes with the SAME name of the Wit.ai App Intent, this class is istanziated during the process, it opens the o_NLP object created by the parsing of the JSON data packet and realizes the command. It must offer the method "DoSomethings".
-    In Unity there is a little problem: only Monobehavior Class can interact with the game object, but you can't istanziate an object of a MonoBehaviour Class. So we needs an other class to interact with the game world. (i.e. lights or move)
+Intent Classes: Classes with the SAME name of the Wit.ai App Intent, this class is istanziated during the process, it opens the o_NLP object created by the parsing of the JSON data packet and realizes the command. It must offer the method "DoSomethings".
+In Unity there is a little problem: only Monobehavior Class can interact with the game object, but you can't istanziate an object of a MonoBehaviour Class. So we needs an other class to interact with the game world. (i.e. lights or move)
     
-    Execution Classes: Each Intent Class as an Execution Class with static methods that act on the game world to realize the user commands. (i.e. lights and LightsActuator)
+Execution Classes: Each Intent Class as an Execution Class with static methods that act on the game world to realize the user commands. (i.e. lights and LightsActuator)
    
 ###4. /Assets/Script/Processing
-	This folder contains the algorithm classes that control the comunication with Wit.ai	servers
+This folder contains the algorithm classes that control the comunication with Wit.ai	servers
 
 ###5. /Assets/Script/HTTP
-	This folder contains the script that the realize the POST HTTP Request from the client to the Wit.ai servers
+This folder contains the script that the realize the POST HTTP Request from the client to the Wit.ai servers
 
 
 
