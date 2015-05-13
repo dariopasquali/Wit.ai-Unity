@@ -36,8 +36,23 @@ If you want to use this project as a template you must know some little things.
     
 	To implement and realize a Wit.ai command you need 3 elements:
     
-    - **O_NLP classes**. this file contains all the info to convert the JSON data packet	to real C# object.
+    - O_NLP classes. this file contains all the info to convert the JSON data packet to		real C# object. In particual you must add your custom Entities in the Entities class. To know how you must format your C# classes just see the JSON data packet (Preview API Output) in che Wit.Ai Enitites Console. 
     
+    i.e.
+      	public class _Entities
+        {
+            //....
+            
+            [JsonConverter(typeof(JsonToArrayConverter<_On_Off>))]
+            public _On_Off[] on_off { get; set; }
+            
+            //...
+        }
+        
+        public class _On_Off
+        {
+        	public string value { get; set; }
+        }
 
    
 
