@@ -85,22 +85,11 @@ If you want to use this project as a template you must know some little things.
     
     Execution Classes: Each Intent Class as an Execution Class with static methods that act on the game world to realize the user commands. (i.e. lights and LightsActuator)
    
-
 ###4. /Assets/Script/Processing
 	This folder contains the algorithm classes that control the comunication with Wit.ai	servers
 
-
-
-
-
-
-
-
-
-
-
-
-
+###5. /Assets/Script/HTTP
+	This folder contains the script that the realize the POST HTTP Request from the client to the Wit.ai servers
 
 
 
