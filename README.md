@@ -29,7 +29,7 @@ If you want to use this project as a template you must know some little things.
 ###2. /Assets/Script/PluginController.cs
 	This script control the processing of Speech files in response to user keyDown 			input. (i.e. if you press P, the script process "lightsoff" tu turn off the light)
     
-   	In this calss you also have to configure the Wit.ai access Token with your app code,	the processing class need this code to comunicate with your application on Wit.ai 		servers
+   	In this calss you also have to configure the Wit.ai access Token with your app code,	the processing class need this code to comunicate with your application on Wit.ai 		servers.
     
 3. item
 
