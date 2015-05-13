@@ -35,7 +35,11 @@ If you want to use this project as a template you must know some little things.
 	This folder is the core of the Game, it contains all the real class that implement		the command behavior.
     
 	To implement and realize a Wit.ai command you need 3 elements:
-    - 
+    
+    - **O_NLP classes**. this file contains all the info to convert the JSON data packet	to real C# object.
+    
+
+   
 
 ###4. /Assets/Script/Processing
 	This folder contains the algorithm classes that control the comunication with Wit.ai	servers
