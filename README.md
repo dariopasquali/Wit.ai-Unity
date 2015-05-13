@@ -1,23 +1,17 @@
 ##Wit.aiUnityLightsAndMove
 
-It's a very very simple game witth a cube on a plane, you only move forward the cube and switch on/off the ambient light.
+It's a very very simple game with where you can move a cube on a plane or change the ambient light with your voice.
 
-#Main Folder
-contains the wav ADPCM files with the speech command for Wit.ai, put here new custom command.
+The game is binded with a Wit.ai App: Wit.ai is an online service that takes a natural language sentence, ie. 'I have a meeting tomorrow', and sends back data that can be easily interpreted by software, ie. 'intent: appointment, datetime: 2014-03-02T00:00:00.000+01:00'.
 
-#Script/HTTP
-contains the C# script that control the HTTP Request from your client and the Wit.ai server. Don't touch that.
+The scripts send sound data from a ADPCM file to the Wit.ai server by an HTTP request.
+The Data from the server are formatted in JSON format, so the scripts convert them in the respective classes.
 
-#Script/NLP
-Here there are the core of the program.
-Wit.ai, to works correctly unity, needs 3 type of Classes:
-- JSON Class
-- Intent Class
-- Actuator Class
+Then scripts 
 
-###JSON Class (O_NLP)
-	to parse the JSON message from the Wit.ai during che Process.
-    You have to replicate the JSON format with classes and attibutes.
+
+
+
 
 
 
