@@ -80,6 +80,8 @@ If you want to use this project as a template you must know some little things.
         	public string value { get; set; }
         }
 
+	Intent classes: Classes with the SAME name of the Wit.ai App Intent, this class is istanziated during the process, it opens the o_NLP object created by the parsing of the JSON data packet and realizes the command. It must offer the method "DoSomethings".
+    In Unity there is a little problem: only Monobehavior Class can interact with the game object
    
 
 ###4. /Assets/Script/Processing
