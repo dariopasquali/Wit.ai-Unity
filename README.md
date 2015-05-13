@@ -31,7 +31,8 @@ If you want to use this project as a template you must know some little things.
     
    	In this calss you also have to configure the Wit.ai access Token with your app code,	the processing class need this code to comunicate with your application on Wit.ai 		servers.
     
-3. item
+###3. /Assets/Script/Processing
+	This folder contains the algorithm classes that control the comunication with Wit.ai	servers
 
 
 
