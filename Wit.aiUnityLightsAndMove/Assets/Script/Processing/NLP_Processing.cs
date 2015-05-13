@@ -42,14 +42,14 @@ namespace UnityHttpReq
         {
 			log = "hold on ....";
 			DateTime start = DateTime.Now;
-			UnityEngine.Debug.Log ("File reading");
+
             FileStream filestream = new FileStream(file, FileMode.Open, FileAccess.Read);
             BinaryReader filereader = new BinaryReader(filestream);
             byte[] BA_AudioFile = filereader.ReadBytes((Int32)filestream.Length);
             filestream.Close();
             filereader.Close();
 
-			UnityEngine.Debug.Log("Send wit request");
+
             Request req = new Request("POST", speech_url, BA_AudioFile);
             req.AddHeader("Authorization", "Bearer " + wit_ai_access);
             req.AddHeader("Content-Type", "audio/wav");
@@ -79,26 +79,37 @@ namespace UnityHttpReq
 
             // This codeblock dynamically casts the intent to the corresponding class
             // Check README.txt in Vitals.Brain
-            Assembly objAssembly;
-            objAssembly = Assembly.GetExecutingAssembly();
-
-
-			Type classType = objAssembly.GetType("UnityHttpReq." + oNLP.outcomes[0].intent);
-
-			if (classType == null)
-				log += "Error: can't recognize the intent";
-
-            object obj = Activator.CreateInstance(classType);
-
-            MethodInfo mi = classType.GetMethod("doSomething");
-
-            object[] parameters = new object[1];
-            parameters[0] = oNLP;
-
-            mi = classType.GetMethod("doSomething");
             
-            sentence = (string)mi.Invoke(obj, parameters);
+			try{
 
+				Assembly objAssembly;
+				objAssembly = Assembly.GetExecutingAssembly();				
+				
+				Type classType = objAssembly.GetType("UnityHttpReq." + oNLP.outcomes[0].intent);
+				
+				if (classType == null)
+					log += "Error: can't recognize the intent";
+				
+				object obj = Activator.CreateInstance(classType);
+				
+				MethodInfo mi = classType.GetMethod("doSomething");
+				
+				object[] parameters = new object[1];
+				parameters[0] = oNLP;
+				
+				mi = classType.GetMethod("doSomething");
+				
+				sentence = (string)mi.Invoke(obj, parameters);
+
+			}
+			catch (IndexOutOfRangeException e){
+				UnityEngine.Debug.Log("Index out of range");
+			}
+			catch(NullReferenceException n)
+			{
+				UnityEngine.Debug.Log("null ref");
+
+			}
             // Show what was deducted from the sentence
             //nlp_text += "\n\n"+sentence;
 			log += sentence;
