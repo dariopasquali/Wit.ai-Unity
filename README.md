@@ -30,8 +30,14 @@ If you want to use this project as a template you must know some little things.
 	This script control the processing of Speech files in response to user keyDown 			input. (i.e. if you press P, the script process "lightsoff" tu turn off the light)
     
    	In this calss you also have to configure the Wit.ai access Token with your app code,	the processing class need this code to comunicate with your application on Wit.ai 		servers.
+
+###3. /Assets/Script/NLP
+	This folder is the core of the Game, it contains all the real class that implement		the command behavior.
     
-###3. /Assets/Script/Processing
+	To implement and realize a Wit.ai command you need 3 elements:
+    - 
+
+###4. /Assets/Script/Processing
 	This folder contains the algorithm classes that control the comunication with Wit.ai	servers
 
 
