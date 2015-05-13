@@ -26,7 +26,8 @@ If you want to use this project as a template you must know some little things.
 ###1. Main Folder
 	Here you must put the audio file with your command. That file must be in PCM or 		ADPCM (better) format.
     
-###2. item
+###2. /Assets/Script/PluginController.cs
+	This script control the processing of Speech files in response to user keyDown 			input. (i.e. if you press P, the script process "lightsoff" tu turn off the light)
 3. item
 
 
