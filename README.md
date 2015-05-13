@@ -1,4 +1,4 @@
-##Wit.aiUnityLightsAndMove
+#**Wit.aiUnityLightsAndMove**
 
 It's a very very simple game with where you can move a cube on a plane or change the ambient light with your voice.
 
@@ -8,6 +8,27 @@ The scripts send sound data from a ADPCM file to the Wit.ai server by an HTTP re
 The Data from the server are formatted in JSON format, so the scripts convert them in the respective classes.
 
 Then scripts realize what you said.
+
+#**What can you say??**
+
+The game is made to respond at 3 sentences:
+- turn the light on
+- turn the light off
+- move forward
+
+but you can change the speech file as you wish.
+i.e. you can say "light on/off" and the behavior is the same. (this is the power of Wit.ai) 
+
+#**What can you change??**
+
+If you want to use this project as a template you must know some little things.
+
+###1. Main Folder
+	Here you must put the audio file with your command. That file must be in PCM or 		ADPCM (better) format.
+    
+###2. item
+3. item
+
 
 
 
