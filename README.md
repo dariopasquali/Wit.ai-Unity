@@ -9,7 +9,7 @@ The Data from the server are formatted in JSON format, so the scripts convert th
 
 Then scripts realize what you said.
 
-#**What can you say??**
+#What can you say??
 
 The game is made to respond at 3 sentences:
 - turn the light on
