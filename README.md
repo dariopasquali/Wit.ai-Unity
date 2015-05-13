@@ -7,7 +7,7 @@ The game is binded with a Wit.ai App: Wit.ai is an online service that takes a n
 The scripts send sound data from a ADPCM file to the Wit.ai server by an HTTP request.
 The Data from the server are formatted in JSON format, so the scripts convert them in the respective classes.
 
-Then scripts 
+Then scripts realize what you said.
 
 
 
