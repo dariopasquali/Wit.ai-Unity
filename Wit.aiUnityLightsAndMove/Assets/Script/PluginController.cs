@@ -9,15 +9,12 @@ public class PluginController : MonoBehaviour {
 	// change it if you wanto to use this app as a template
 	string wit_code = "EIZVGRFJR4THCTATYLNAAMOXIUWBPV7N";
 
-    string lightoff = @"lightsoff.wav";
-	string lighton = @"lightson.wav";
-	string move10 = @"move10.wav";
+    string lightoff = @"lightsoff";
+	string lighton = @"lightson";
+	string move10 = @"move10";
 
 
-	public GameObject cube;
-
-   
-    // NLP_Processing is the code that processes the response from wit.ai
+	// NLP_Processing is the code that processes the response from wit.ai
     NLP_Processing processor;
 
 	

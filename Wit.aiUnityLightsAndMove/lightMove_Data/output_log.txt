@@ -12,23 +12,19 @@ Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsA
 Loading C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
-Loading C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
 Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\Ionic.Zlib.dll (this message is harmless)
 Loading C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\Ionic.Zlib.dll into Unity Child Domain
-- Completed reload, in  0.101 seconds
+Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\Newtonsoft.Json.dll (this message is harmless)
+Loading C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\Newtonsoft.Json.dll into Unity Child Domain
+- Completed reload, in  0.100 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\System.dll (this message is harmless)
-Wit.ai Controller started
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1300 -> priority: 1 
+  Thread -> id: 11b0 -> priority: 1 
 File reading
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
@@ -39,28 +35,37 @@ Send wit request
 
 Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\Mono.Security.dll (this message is harmless)
 NET: SSL Cert: RemoteCertificateNotAvailable, RemoteCertificateChainErrors
-{
-  "msg_id" : "0d7b0cf2-6f03-4421-b730-4b03fca65b1e",
-  "_text" : "movie",
-  "outcomes" : [ {
-    "_text" : "movie",
-    "intent" : "move",
-    "entities" : { },
-    "confidence" : 0.392
-  } ]
-}
+Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\System.Data.dll (this message is harmless)
+File reading
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\System.Xml.dll (this message is harmless)
-Platform assembly: C:\Users\Gabri\Desktop\GITHUB\Wit.ai-Unity\Wit.aiUnityLightsAndMove\lightMove_Data\Managed\System.Data.dll (this message is harmless)
-NullReferenceException: Object reference not set to an instance of an object
-  at UnityHttpReq.move.doSomething (UnityHttpReq.RootObject _o_NLP) [0x00000] in <filename unknown>:0 
-  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (object,object[],System.Exception&)
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <filename unknown>:0 
-Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <filename unknown>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <filename unknown>:0 
+Send wit request
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+File reading
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Send wit request
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+File reading
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Send wit request
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+ArgumentNullException: Argument cannot be null.
+Parameter name: type
+  at System.Activator.CheckType (System.Type type) [0x00000] in <filename unknown>:0 
+  at System.Activator.CreateInstance (System.Type type, Boolean nonPublic) [0x00000] in <filename unknown>:0 
+  at System.Activator.CreateInstance (System.Type type) [0x00000] in <filename unknown>:0 
   at UnityHttpReq.NLP_Processing.ElaborateResponse (System.String nlp_text) [0x00000] in <filename unknown>:0 
   at UnityHttpReq.NLP_Processing+<ProcessSpokenFile>c__AnonStorey1.<>m__2 (HTTP.Request request) [0x00000] in <filename unknown>:0 
   at HTTP.ResponseCallbackDispatcher.Update () [0x00000] in <filename unknown>:0 
@@ -75,28 +80,19 @@ Send wit request
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-{
-  "msg_id" : "a6fdf697-891c-4294-9bbd-559f77603148",
-  "_text" : "turn the lights off",
-  "outcomes" : [ {
-    "_text" : "turn the lights off",
-    "intent" : "lights",
-    "entities" : {
-      "on_off" : [ {
-        "value" : "off"
-      } ]
-    },
-    "confidence" : 0.999
-  } ]
-}
+File reading
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-sentence: turn the lights off
-intent: lights
-state: off
-confidence: 99.9
+Send wit request
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
+File reading
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Send wit request
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 

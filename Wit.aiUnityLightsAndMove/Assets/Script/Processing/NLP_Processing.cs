@@ -66,7 +66,7 @@ namespace UnityHttpReq
         private string ElaborateResponse(string nlp_text)
         {
 			string sentence = "";
-           	log += "\n" + nlp_text;
+           	//log += "\n" + nlp_text;
 
             // If the audio file doesn't contain anything, or wit.ai doesn't understand it, a code 400 will be returned
             if (nlp_text.Contains("The remote server returned an error: (400) Bad Request"))
